@@ -17,7 +17,7 @@ module ApplicationHelper
   end
 
   def copyright_generator
-    DevcampViewTool::Renderer.copyright 'Jordan Hudgens', 'All rights reserved'
+    DevcampViewTool::Renderer.copyright 'Aylon Spigel', 'All rights reserved'
   end
 
   def nav_items
@@ -35,16 +35,8 @@ module ApplicationHelper
         title: 'Contact'
       },
       {
-        url: blogs_path,
-        title: 'Blog'
-      },
-      {
         url: portfolios_path,
         title: 'Portfolio'
-      },
-      {
-        url: tech_news_path,
-        title: 'Tech News'
       },
     ]
   end
@@ -72,7 +64,7 @@ module ApplicationHelper
   end
 
   def alert_generator msg
-    js add_gritter(msg, title: "Jordan Hudgens Portfolio", sticky: false)
+    js add_gritter(msg, title: "Aylon Spigel Portfolio", sticky: false)
   end
 
 end
